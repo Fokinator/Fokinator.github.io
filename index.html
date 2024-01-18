@@ -23,7 +23,13 @@
             }
         };
         function umm() {
-            alert(prompt("Кого послать? (в и. п.)") + ", иди нафиг");
+            const s = prompt("Кого послать? (в и. п.)").trim();
+            if (s && !s.length === 0) {
+                alert( + ", иди нафиг");
+            } else {
+                alert("Сайт в афиге");
+            }
+            
         }
     </script>
     <body>
